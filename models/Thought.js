@@ -10,7 +10,7 @@ const thoughtSchema = new Schema(
     },
     createdAt: {
       type: Date,
-      //TODO: set default
+      createdAt: { type: Date, default: Date.now },
       //TODO: getter method
     },
     userName: {
