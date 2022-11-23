@@ -5,10 +5,10 @@ const {
   createThought,
   updateThought,
   deleteThought,
-} = require("../../controllers/thought-controller.js");
+} = require("../../controllers/thought-controller");
 
 // /api/thoughts
-router.route("/").get(getThoughts).post(createThought);
+router.route("/").get(getThoughts);
 
 // /api/thoughts/:thoughtId
 router
